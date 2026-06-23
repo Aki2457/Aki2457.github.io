@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oldoodle Search Speed Test</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="panel">
+        <header>
+          <p>Oldoodle Lab</p>
+          <h1>Search Speed Test</h1>
+        </header>
+
+        <form id="runner" class="controls">
+          <label>
+            Endpoint
+            <input id="endpoint" type="url" value="http://43.133.207.10:30566" required>
+          </label>
+          <label>
+            Query
+            <input id="query" value="windows xp internet explorer" required>
+          </label>
+          <label>
+            Runs
+            <input id="runs" type="number" min="1" max="20" value="5" required>
+          </label>
+          <button type="submit">Run Test</button>
+        </form>
+
+        <section class="stats" aria-live="polite">
+          <article>
+            <span id="avg">-</span>
+            <b>Average</b>
+          </article>
+          <article>
+            <span id="best">-</span>
+            <b>Best</b>
+          </article>
+          <article>
+            <span id="count">-</span>
+            <b>Results</b>
+          </article>
+          <article>
+            <span id="status">Idle</span>
+            <b>Status</b>
+          </article>
+        </section>
+
+        <section>
+          <h2>Run Log</h2>
+          <ol id="log"></ol>
+        </section>
+
+        <section>
+          <h2>Sample Payload</h2>
+          <pre id="payload">{}</pre>
+        </section>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

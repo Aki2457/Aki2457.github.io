@@ -7,6 +7,7 @@ import Health from "./pages/Health";
 import Upload from "./pages/Upload";
 import Voicevox from "./pages/Voicevox";
 import AirplaneFolio from "./pages/AirplaneFolio";
+import ToTheStars from "./pages/ToTheStars";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <Route path="/upload" element={<Upload />} />
       <Route path="/voicevox" element={<Voicevox />} />
       <Route path="/airplane-folio" element={<AirplaneFolio />} />
+      <Route path="/to-the-stars" element={<ToTheStars />} />
     </Routes>
   );
 }

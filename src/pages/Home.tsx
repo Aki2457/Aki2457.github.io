@@ -130,6 +130,8 @@ export default function Home() {
 
           <footer className="pt-12 text-center text-xs text-white/15">
             Built with <a href="https://zocomputer.com" className="underline underline-offset-2 hover:text-white/30 transition-colors">Zo</a>
+            {" · "}
+            <a href="https://helloearth.zo.space/auth" className="hover:text-white/30 transition-colors">contribute</a>
           </footer>
         </div>
       </main>

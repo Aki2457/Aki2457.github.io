@@ -244,6 +244,10 @@ export default function ToTheStarsPage() {
             Zo
           </a>{" "}
           · From Earth, with love · {year}
+          {" · "}
+          <a href="https://helloearth.zo.space/auth" style={{ color: "rgba(138,133,130,0.35)" }}>
+            contribute
+          </a>
         </p>
       </div>
     </main>
